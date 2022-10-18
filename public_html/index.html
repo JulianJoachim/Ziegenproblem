@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title></title>
+    </head>
+    <body>
+        <h1> Das Ziegenproblem </h1>
+        <h3 id = "task"> Wählen Sie eine Tür aus </h3>
+        <h3 id = "result"> </h3>
+
+        <div id = "ctuer">
+            <div  class ="tuer"> <!-- comment -->
+                <img id = "0" src="bilder/tuer.png" alt="" onclick="loadDoc(this.id)">
+            </div>
+            <div  class ="tuer">
+                <img  id = "1" src="bilder/tuer.png" alt="" onclick="loadDoc(this.id)">
+            </div>
+            <div  class ="tuer">
+                <img  id = "2" src="bilder/tuer.png" alt="" onclick="loadDoc(this.id)">
+            </div>
+        </div>
+
+        <div id = "show">
+            <div id = "statistic" style="width:80px">
+                <table id = "table" style="width:80px">
+                    <caption>Statistik</caption>
+                    <tr>
+                        <th ></th>
+                        <th>Ziege</th>
+                        <th>Auto</th>
+                    </tr>
+                    <tr>
+                        <td class = "breite">1. Wahl   </td>
+                        <td  >x</td>
+                        <td  >x</td>
+                    </tr>
+                    <tr>
+                        <td class = "breite">2. Wahl   </td>
+                        <td >y</td>
+                        <td >y</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="cbutton">
+                <button class="button" type="button" onclick="restart()">neustarten</button>
+                <div class="divider"/>
+                <button class="button" type="button" onclick="exit()">beenden</button>
+            </div>
+        </div>
+        <!-- <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div> -->
+
+        <script src="script.js" async></script>
+
+
+    </body>
+</html>
